@@ -22,7 +22,7 @@ export class HomeComponent {
   }
 
   category: any[] = [
-    { icon: 'assets/icon-rocket.svg', label: '🏆 Primeiro campeão da copa ADBangu.' },
+    { icon: 'assets/icon-rocket.svg', label: '🏆 1ª Campeão da copa ADB.' },
     { icon: 'assets/icon-pasta.svg', label: '🪙 Vice Campeão Ujadb 2025.' },
     { icon: 'assets/icon-book.svg', label: '☝️ O Real Clube de Cristo.' },
     /* {icon: 'assets/icon-download.svg', label: 'Curriculo'}, */
