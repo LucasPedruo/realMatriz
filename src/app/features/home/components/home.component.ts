@@ -22,23 +22,15 @@ export class HomeComponent {
   }
 
   category: any[] = [
-    { icon: 'assets/icon-rocket.svg', label: 'Frontend Engineer | Product Designer' },
-    { icon: 'assets/icon-pasta.svg', label: 'VVS Sistemas' },
-    { icon: 'assets/icon-book.svg', label: 'ADS - PUC Minas' },
+    { icon: 'assets/icon-rocket.svg', label: '🏆 Primeiro campeão da copa ADBangu.' },
+    { icon: 'assets/icon-pasta.svg', label: '🪙 Vice Campeão Ujadb 2025.' },
+    { icon: 'assets/icon-book.svg', label: '☝️ O Real Clube de Cristo.' },
     /* {icon: 'assets/icon-download.svg', label: 'Curriculo'}, */
   ]
 
   button: any[] = [
-    // { label: 'Biografia', icon: 'navigation', link: '#', target: '_self', toast: 'Biografia em desenvolvimento' },
-    // { label: 'Projetos', icon: 'navigation', link: '#', target: '_self', toast: 'Projetos em desenvolvimento' },
-    // { label: 'Setup', icon: 'navigation', link: '#', target: '_self', toast: 'Setup em desenvolvimento' },
-    { label: 'Whatsapp', icon: 'export', link: 'https://wa.me/5521989560135', target: '_blank' },
-    { label: 'Linkedin', icon: 'export', link: 'https://www.linkedin.com/in/lucaspedruo', target: '_blank' },
-    { label: 'NewsLetter', icon: 'export', link: 'https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7341522596053540864', target: '_blank' },
-    { label: 'Behance', icon: 'export', link: 'https://be.net/lucaspedruo', target: '_blank' },
-    { label: 'Instagram', icon: 'export', link: 'https://instagram.com/lucaspedruo', target: '_blank' },
-    { label: 'GitHub', icon: 'export', link: 'https://github.com/LucasPedruo', target: '_blank' },
-    { label: 'Currículo', icon: 'export', link: 'assets/curriculo.pdf', target: '_blank' },
+    { label: 'Instagram', icon: 'export', link: 'https://instagram.com/cluberealmatriz', target: '_blank' },
+    { label: 'Faça parte do time', icon: 'export', link: 'https://forms.gle/YNwukJH3vUTdZqsH9', target: '_blank' },
   ]
 
   social: any[] = [
