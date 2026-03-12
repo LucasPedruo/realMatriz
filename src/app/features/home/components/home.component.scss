@@ -327,9 +327,9 @@
 
 @media (max-width: 500px) {
   .container-principal {
-    max-width: 400px;
-    padding: 0 20px;
-    overflow: hidden;
+    max-width: 100%;
+    padding: 12px 20px 20px;
+    overflow: visible;
     width: 100%;
 
     .tool-bar,
@@ -353,5 +353,11 @@
     .social-medias {
       display: none;
     }
+  }
+}
+
+@media (max-height: 768px){
+  .container-principal {
+    padding: 60px 0;
   }
 }

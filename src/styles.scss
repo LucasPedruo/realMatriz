@@ -70,28 +70,30 @@
   --yellow-9: #3B2300;
 }
 
+html,
 body {
   background-color: #050505;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
   display: flex;
-  height: 98vh;
+  min-height: 100dvh;
   align-items: center;
   justify-content: center;
+  overflow-x: auto;
+  overflow-y: auto;
   color: var(--text-color-third);
-  font-family: Inter;
   cursor: grab;
   user-select: none;
   -webkit-user-drag: none;
 }
 
-body,
-html {
-  background-color: #050505;
+app-root {
+  width: 100%;
   display: flex;
-  height: 100vh;
-  align-items: center;
   justify-content: center;
-  margin: 0;
-  font-family: "Inter", sans-serif;
 }
 
 *,
@@ -126,4 +128,16 @@ a {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+@media (max-width: 500px) {
+  body {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+
+  app-root {
+    justify-content: flex-start;
+  }
 }
