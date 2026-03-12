@@ -79,21 +79,26 @@ body {
 
 body {
   display: flex;
-  min-height: 100dvh;
+  min-height: 98vh;
   align-items: center;
   justify-content: center;
-  overflow-x: auto;
-  overflow-y: auto;
+/*   overflow-x: auto;
+  overflow-y: auto; */
   color: var(--text-color-third);
   cursor: grab;
   user-select: none;
   -webkit-user-drag: none;
 }
 
-app-root {
-  width: 100%;
+body,
+html {
+  background-color: #050505;
   display: flex;
+  height: 100vh;
+  align-items: center;
   justify-content: center;
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
 *,
@@ -133,8 +138,7 @@ table {
 @media (max-width: 500px) {
   body {
     align-items: flex-start;
-    justify-content: flex-start;
-    padding-top: 40px;
+    justify-content: center;
   }
 
   app-root {
