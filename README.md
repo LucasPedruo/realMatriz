@@ -1,2 +1,0 @@
-# lucaspedruo-site
-

@@ -12,6 +12,7 @@ import { ToastComponent } from '../../../component/toast/toast.component';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  readonly defaultApoioIcon = 'assets/favicon.png';
 
   @ViewChild(ToastComponent) toast!: ToastComponent;
   showToastIfNeeded(event: Event, item: any) {
@@ -22,22 +23,28 @@ export class HomeComponent {
   }
 
   category: any[] = [
-    { icon: 'assets/icon-rocket.svg', label: '🏆 1ª Campeão da copa ADB.' },
-    { icon: 'assets/icon-pasta.svg', label: '🪙 Vice Campeão Ujadb 2025.' },
+    { icon: 'assets/icon-rocket.svg', label: '🏆 1ª Campeão da ADBangu.' },
     { icon: 'assets/icon-book.svg', label: '☝️ O Real Clube de Cristo.' },
-    /* {icon: 'assets/icon-download.svg', label: 'Curriculo'}, */
   ]
+
+  calendario: any[] = [];
 
   button: any[] = [
-    { label: 'Instagram', icon: 'export', link: 'https://instagram.com/cluberealmatriz', target: '_blank' },
-    { label: 'Faça parte do time', icon: 'export', link: 'https://forms.gle/YNwukJH3vUTdZqsH9', target: '_blank' },
+    { label: 'Marque um amistoso', icon: 'export', link: '', target: '_self', disabled: true },
+    { label: 'Conheça nossa comunidade', icon: 'export', link: 'https://chat.whatsapp.com/BZTDChs8zNT6W0643Tjwts', target: '_blank', disabled: false },
+    { label: 'Faça parte do time', icon: 'export', link: 'https://forms.gle/YNwukJH3vUTdZqsH9', target: '_blank', disabled: false },
+    { label: 'Instagram', icon: 'export', link: 'https://instagram.com/cluberealmatriz', target: '_blank', disabled: false },
+    { label: 'Nossa loja', icon: 'export', link: '', target: '_self', disabled: true },
+    { label: 'Sala de troféus', icon: 'export', link: '', target: '_self', disabled: true },
+    { label: 'Treine com o time', icon: 'export', link: '', target: '_self', disabled: true },
+    { label: 'Galeria de imagens', icon: 'export', link: '', target: '_blank', disabled: false },
   ]
 
-  social: any[] = [
-   // { icon: 'assets/icon-github.svg', alt: 'GitHub', href: 'https://github.com/LucasPedruo' },
-   // { icon: 'assets/icon-linkedin.svg', alt: 'Linkedin', href: 'https://www.linkedin.com/in/lucaspedruo/' },
-   // { icon: 'assets/icon-whatsapp.svg', alt: 'Whatsapp', href: 'http://wa.me/5521989560135' },
-    //{ icon: 'assets/icon-youtube.svg', alt: 'Youtube', href: 'https://www.youtube.com/@Lucaspedruo' },
+  apoio: any[] = [
+    { icon: '', alt: 'FullDev', href: 'https://fulldev.com.br', },
+    { icon: '', alt: 'Harpia Precatórios', href: '', },
+    { icon: '', alt: 'Gol do Rayo', href: '', },
+    { icon: '', alt: 'WB Griff', href: '', },
   ]
 
 }

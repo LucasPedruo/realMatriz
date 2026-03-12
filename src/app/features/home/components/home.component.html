@@ -1,32 +1,13 @@
 <div class="container-principal">
- <!--  <div class="tool-bar">
-    <p>Rio de Janeiro - Rj</p>
-   <button disabled>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="14"
-        height="14"
-        viewBox="0 0 14 14"
-        fill="none"
-      >
-        <path
-          d="M8.22665 0.219747C8.32731 0.118947 8.45463 0.0489421 8.59367 0.0179458C8.73271 -0.0130506 8.87771 -0.00375327 9.01165 0.0447471C10.1193 0.446011 11.1077 1.12029 11.8855 2.00513C12.6632 2.88997 13.2051 3.95676 13.4609 5.1067C13.7168 6.25665 13.6783 7.45256 13.3491 8.58368C13.0198 9.7148 12.4105 10.7446 11.5775 11.5776C10.7445 12.4106 9.7147 13.0199 8.58358 13.3492C7.45246 13.6784 6.25655 13.7169 5.10661 13.461C3.95666 13.2052 2.88987 12.6633 2.00503 11.8856C1.12019 11.1078 0.445914 10.1194 0.0446509 9.01175C-0.00379803 8.87769 -0.0130409 8.7326 0.0180051 8.59348C0.0490511 8.45436 0.1191 8.32697 0.219946 8.22622C0.320792 8.12548 0.448258 8.05557 0.587412 8.02467C0.726566 7.99376 0.871644 8.00316 1.00565 8.05175C1.98892 8.40847 3.05353 8.47742 4.0746 8.25049C5.09567 8.02357 6.03086 7.51019 6.77048 6.77057C7.5101 6.03095 8.02348 5.09576 8.2504 4.07469C8.47732 3.05362 8.40838 1.98902 8.05165 1.00575C8.00307 0.871653 7.99372 0.726485 8.02472 0.58727C8.05572 0.448054 8.12576 0.320562 8.22665 0.219747ZM9.84265 2.16475C9.9488 3.19919 9.82315 4.24428 9.47483 5.22408C9.12651 6.20388 8.56427 7.09376 7.82897 7.82906C7.09367 8.56436 6.20378 9.1266 5.22398 9.47493C4.24418 9.82325 3.19909 9.9489 2.16465 9.84275C2.63096 10.4879 3.23178 11.0241 3.9256 11.4144C4.61941 11.8046 5.38968 12.0395 6.18318 12.103C6.97668 12.1664 7.7745 12.0568 8.5215 11.7818C9.2685 11.5067 9.94687 11.0727 10.5098 10.5098C11.0726 9.94697 11.5066 9.26859 11.7817 8.52159C12.0567 7.77459 12.1663 6.97678 12.1029 6.18328C12.0395 5.38978 11.8045 4.61951 11.4143 3.92569C11.024 3.23188 10.4878 2.63106 9.84265 2.16475Z"
-          fill="#8B949E"
-        />
-      </svg>
-    </button>
-  </div> -->
-
   <div class="profile">
     <div class="avatar">
-      <img src="assets/avatar.png" draggable="false" alt="imagem-Lucas-Pedro" />
+      <img src="assets/logoazul.jpeg" draggable="false" alt="imagem-Lucas-Pedro" />
     </div>
     <div class="info-user">
       <p class="user-name">Real Matriz FC</p>
       <div>
         @for(item of category; track item){
-        <div class="categorys"><!-- 
-          <img [src]="item.icon" alt="" draggable="false" /> -->
+        <div class="categorys">
           <label>{{ item.label }}</label>
         </div>
         }
@@ -40,7 +21,7 @@
         <img src="assets/logoazul.jpeg" draggable="false" alt="" />
       </div>
       <div class="info">
-        <p>Real Matriz Futebol Clube</p>
+        <p>Calendário de jogos</p>
         <div class="subtitle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -92,6 +73,7 @@
           [href]="item.link"
           [target]="item.target"
           (click)="showToastIfNeeded($event, item)"
+          [ariaDisabled]="item.disabled"
         >
           {{ item.label }}
         </a>
@@ -127,12 +109,15 @@
       }
   </div>
 
-  <div class="social-medias">
-    @for(item of social; track item){
-    <a [href]="item.href" target="_blank">
-      <img [src]="item.icon" draggable="false" [alt]="item.alt" />
-    </a>
-    }
+  <div class="apoio">
+    <p>Apoio:</p>
+    <div class="group-apoio">
+      @for(item of apoio; track item){
+      <a [href]="item.href" target="_blank" [title]="item.alt">
+        <img [src]="item.icon || defaultApoioIcon" draggable="false" [alt]="item.alt" />
+      </a>
+      }
+    </div>
   </div>
 
   <div class="footer">
