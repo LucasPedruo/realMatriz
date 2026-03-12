@@ -15,6 +15,11 @@ export class HomeComponent {
   readonly defaultApoioIcon = 'assets/favicon.png';
 
   @ViewChild(ToastComponent) toast!: ToastComponent;
+
+  showMarcarJogoToast() {
+    this.toast.show('Marcar jogo em breve.');
+  }
+
   showToastIfNeeded(event: Event, item: any) {
     const hasLink = typeof item?.link === 'string'
       ? item.link.trim().length > 0

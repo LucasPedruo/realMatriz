@@ -56,7 +56,14 @@
       }
     </div>
 
-    <div class="calendario">
+    <div
+      class="calendario"
+      role="button"
+      tabindex="0"
+      (click)="showMarcarJogoToast()"
+      (keydown.enter)="showMarcarJogoToast()"
+      (keydown.space)="showMarcarJogoToast()"
+    >
       <p>Marcar jogo</p>
     </div>
   </div>
