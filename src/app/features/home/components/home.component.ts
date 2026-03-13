@@ -66,7 +66,7 @@ export class HomeComponent {
     { icon: '', alt: 'FullDev', href: 'https://fulldev.com.br', },
     { icon: '', alt: 'Harpia Precatórios', href: 'https://www.instagram.com/harpiaprecatorios/', },
     { icon: '', alt: 'WB Griff', href: 'https://share.google/JiHHMZQBB3ViCyc3R', },
-    { icon: 'gol-do-rayo.png', alt: 'Gol do Rayo', href: 'https://www.instagram.com/goldorayo/', },
+    { icon: '', alt: 'Gol do Rayo', href: 'https://www.instagram.com/goldorayo/', },
   ]
 
 }
