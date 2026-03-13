@@ -43,8 +43,6 @@ export class HomeComponent {
 
   calendario: any[] = [
     { data: '18/03 - Real Matriz x ADVEC' },
-    { data: '25/03 - Disponivel' },
-    { data: '01/04 - Disponivel' },
   ];
 
   get calendarioExistente(): any[] {
