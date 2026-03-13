@@ -56,7 +56,7 @@ export class HomeComponent {
 
   button: any[] = [
     { label: 'Faça parte do time', icon: 'export', link: 'https://forms.gle/YNwukJH3vUTdZqsH9', target: '_blank', disabled: false },
-    { label: 'Treine com o time', icon: 'export', link: '', target: '_self', disabled: true },
+    { label: 'Treine com o time', icon: 'export', link: 'https://forms.gle/MYLs7Xw7Pts3V7Nk7', target: '_self', disabled: false },
     { label: 'Instagram', icon: 'export', link: 'https://instagram.com/cluberealmatriz', target: '_blank', disabled: false },
     { label: 'Conheça nossa comunidade', icon: 'export', link: 'https://chat.whatsapp.com/BZTDChs8zNT6W0643Tjwts', target: '_blank', disabled: false },
     { label: 'Ultimos resultados', icon: 'export', link: '', target: '_blank', disabled: true },
