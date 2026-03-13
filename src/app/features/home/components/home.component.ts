@@ -54,6 +54,8 @@ export class HomeComponent {
     { label: 'Treine com o time', icon: 'export', link: 'https://forms.gle/MYLs7Xw7Pts3V7Nk7', target: '_self', disabled: false },
     { label: 'Instagram', icon: 'export', link: 'https://instagram.com/cluberealmatriz', target: '_blank', disabled: false },
     { label: 'Conheça nossa comunidade', icon: 'export', link: 'https://chat.whatsapp.com/BZTDChs8zNT6W0643Tjwts', target: '_blank', disabled: false },
+    { label: 'Elenco', icon: 'export', link: '', target: '_self', disabled: true },
+    { label: 'Seja um apoiador', icon: 'export', link: '', target: '_self', disabled: true },
     { label: 'Ultimos resultados', icon: 'export', link: '', target: '_blank', disabled: true },
     { label: 'Nossa loja', icon: 'export', link: '', target: '_self', disabled: true },
     { label: 'Sala de troféus', icon: 'export', link: '', target: '_self', disabled: true },
@@ -62,9 +64,9 @@ export class HomeComponent {
 
   apoio: any[] = [
     { icon: '', alt: 'FullDev', href: 'https://fulldev.com.br', },
-    { icon: '', alt: 'Harpia Precatórios', href: '', },
-    { icon: '', alt: 'Gol do Rayo', href: '', },
-    { icon: '', alt: 'WB Griff', href: '', },
+    { icon: '', alt: 'Harpia Precatórios', href: 'https://www.instagram.com/harpiaprecatorios/', },
+    { icon: '', alt: 'WB Griff', href: 'https://share.google/JiHHMZQBB3ViCyc3R', },
+    { icon: 'gol-do-rayo.png', alt: 'Gol do Rayo', href: 'https://www.instagram.com/goldorayo/', },
   ]
 
 }
