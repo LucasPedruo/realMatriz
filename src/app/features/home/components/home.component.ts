@@ -42,9 +42,9 @@ export class HomeComponent {
   ]
 
   calendario: any[] = [
-    { data: '18/03 - Real Matriz x Setor Leste' },
-    { data: '20/10 - Real Matriz x Amigos do Real' },
-    { data: '20/10 - Real Matriz x Amigos do Real' },
+    { data: '18/03 - Real Matriz x ADVEC' },
+    { data: '25/03 - Disponivel' },
+    { data: '01/04 - Disponivel' },
   ];
 
   get calendarioExistente(): any[] {
