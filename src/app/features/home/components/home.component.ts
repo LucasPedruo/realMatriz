@@ -1,7 +1,7 @@
-import { Component, inject, Input, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
-import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ToastComponent } from '../../../component/toast/toast.component';
 
 @Component({
@@ -13,12 +13,9 @@ import { ToastComponent } from '../../../component/toast/toast.component';
 })
 export class HomeComponent {
   readonly defaultApoioIcon = 'assets/favicon.png';
+  readonly marcarAmistosoLink = 'https://forms.gle/8zfC5mwnpNecDrhJ6';
 
   @ViewChild(ToastComponent) toast!: ToastComponent;
-
-  showMarcarJogoToast() {
-    this.toast.show('Marcar jogo em breve.');
-  }
 
   showToastIfNeeded(event: Event, item: any) {
     const hasLink = typeof item?.link === 'string'
@@ -37,7 +34,7 @@ export class HomeComponent {
     }
   }
 
-  proximoJogo: any = '20/10 - Real Matriz x Amigos do Real'
+  proximoJogo: any = '18/03 - Real Matriz x Setor Leste'
 
   category: any[] = [
     { icon: 'assets/icon-rocket.svg', label: '🏆 1ª Campeão da ADBangu.' },
@@ -45,7 +42,7 @@ export class HomeComponent {
   ]
 
   calendario: any[] = [
-    { data: '20/10 - Real Matriz x Amigos do Real' },
+    { data: '18/03 - Real Matriz x Setor Leste' },
     { data: '20/10 - Real Matriz x Amigos do Real' },
     { data: '20/10 - Real Matriz x Amigos do Real' },
   ];

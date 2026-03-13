@@ -18,7 +18,7 @@
   <div class="principal-projeto">
     <div class="first-content">
       <div class="info">
-        <p>Próximo jogo</p>
+        <p>Próximos jogos</p>
         <div class="subtitle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +47,8 @@
     </div>
 
     <div class="lista-de-calendario">
+      <span class="bold">Sequência de jogos</span>
+
       @for(item of calendarioExistente; track $index){
         <p>{{item.data}}</p>
 
@@ -56,16 +58,14 @@
       }
     </div>
 
-    <div
+    <a
       class="calendario"
-      role="button"
-      tabindex="0"
-      (click)="showMarcarJogoToast()"
-      (keydown.enter)="showMarcarJogoToast()"
-      (keydown.space)="showMarcarJogoToast()"
+      [href]="marcarAmistosoLink"
+      target="_blank"
+      rel="noopener noreferrer"
     >
-      <p>Marcar jogo</p>
-    </div>
+      <p>Marque um amistoso</p>
+    </a>
   </div>
 
   <div class="menus">
