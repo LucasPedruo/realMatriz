@@ -42,7 +42,7 @@ export class HomeComponent {
   ]
 
   calendario: any[] = [
-    { data: '18/03 - Real Matriz x ADVEC' },
+    { data: '01/04 - Real Matriz x ADVEC' },
   ];
 
   get calendarioExistente(): any[] {
