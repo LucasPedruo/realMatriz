@@ -34,7 +34,8 @@ export class HomeComponent {
     }
   }
 
-  proximoJogo: any = '18/03 - Real Matriz x Setor Leste'
+  proximoJogo: any = 'Sem jogos agendados no momento.';
+  //proximoJogo: any = '18/03 - Real Matriz x Setor Leste'
 
   category: any[] = [
     { icon: 'assets/icon-rocket.svg', label: '🏆 1ª Campeão da ADBangu.' },
@@ -42,7 +43,7 @@ export class HomeComponent {
   ]
 
   calendario: any[] = [
-    { data: '01/04 - Real Matriz x ADVEC' },
+    //{ data: '01/04 - Real Matriz x ADVEC' },
   ];
 
   get calendarioExistente(): any[] {
